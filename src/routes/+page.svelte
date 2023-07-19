@@ -18,6 +18,7 @@
 	import item3 from '$assets/images/item3.jpg?w=w=448;768&aspect=1:1&format=avif;jpg&as=picture'
 	import item4 from '$assets/images/item4.jpg?w=w=448;768&aspect=1:1&format=avif;jpg&as=picture'
 	import { stickyTop, animate } from '$lib/actions'
+	import { Lottie } from 'lottie-svelte'
 	import Picture from '$components/Picture.svelte'
 	import Counter from '$components/Counter.svelte'
 	import BlockItem from '$components/BlockItem.svelte'
@@ -74,7 +75,10 @@
 						epidermis? ¿Cómo me protejo ante ellos de forma sencilla y efectiva? Vuelve el verano, vuelve uno de los
 						must de la salud.
 					</p>
-					<a class="hover:underline" href="#down">Saber más</a>
+					<a class="flex items-center gap-2 hover:underline" href="#down">
+						<Lottie class="w-6" path="/down.json" />
+						<span>Saber más</span>
+					</a>
 				</div>
 			</div>
 		</div>
