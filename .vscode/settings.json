@@ -1,0 +1,13 @@
+{
+	"search.exclude": {
+		"**/.svelte-kit": true,
+		"**/.vscode": true,
+		"**/build": true,
+		"**/node_modules": true,
+		"package-lock.json": true
+	},
+	"editor.indentSize": "tabSize",
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"prettier.documentSelectors": ["**/*.svelte"]
+}

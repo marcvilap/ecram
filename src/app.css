@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'Futura PT';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(./assets/fonts/FuturaPTBook.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Futura PT';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(./assets/fonts/FuturaPTBold.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Reckless Neue';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url(./assets/fonts/RecklessNeueLight.woff2) format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@media (max-width: 400px) {
+		html {
+			font-size: 4vw;
+		}
+	}
+	@media (min-width: 1281px) {
+		html {
+			font-size: 1.25vw;
+		}
+	}
+	@media (min-width: 1920px) {
+		html {
+			font-size: 24px;
+		}
+	}
+	html {
+		@apply scroll-smooth;
+	}
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
+
+.animate .animate-zoom-in,
+.animate .animate-fade-up,
+.animate .animate-fade-left,
+.animate .animate-fade-right {
+	transition-property: opacity, transform;
+	transition-duration: 0ms;
+	transition-delay: 0ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	opacity: 0;
+}
+.animate .animate-zoom-in {
+	transform: translate3d(0, 0, 0) scale(0);
+}
+.animate .animate-fade-up {
+	transform: translate3d(0, 10rem, 0) scale(1);
+}
+.animate .animate-fade-left {
+	transform: translate3d(10rem, 0, 0) scale(1);
+}
+.animate .animate-fade-right {
+	transform: translate3d(-10rem, 0, 0) scale(1);
+}
+.animate.animate-active .animate-zoom-in,
+.animate.animate-active .animate-fade-up,
+.animate.animate-active .animate-fade-left,
+.animate.animate-active .animate-fade-right {
+	will-change: transform, opacity;
+	transition-duration: 1000ms;
+	transform: translate3d(0, 0, 0) scale(1);
+	opacity: 1;
+}
+.animate.animate-active .animate-delay-100 {
+	transition-delay: 100ms;
+}
+.animate.animate-active .animate-delay-200 {
+	transition-delay: 200ms;
+}
+.animate.animate-active .animate-delay-300 {
+	transition-delay: 300ms;
+}
+.animate.animate-active .animate-delay-400 {
+	transition-delay: 400ms;
+}
+.animate.animate-active .animate-delay-500 {
+	transition-delay: 500ms;
+}
+.animate.animate-active .animate-delay-600 {
+	transition-delay: 600ms;
+}
+
+.fix-image {
+	box-shadow: 0 0 0 2px #f2f0ea;
+}
