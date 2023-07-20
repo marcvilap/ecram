@@ -96,11 +96,16 @@
 			</h2>
 			<div>
 				<div class="animate-fade-up animate-delay-200 mx-auto grid max-w-sm gap-4 text-lg lg:gap-8">
-					<Counter start="+" num="{2}" description="+2 millones de casos de cáncer de piel cada año." />
+					<Counter
+						end="%"
+						num="{50}"
+						description="Reduce la respuesta inmunológica de la piel en un 50% en tan solo 20 minutos."
+					/>
 					<Counter end="%" num="{80}" description="Responsable del 80% del envejecimiento de la piel." />
 					<Counter
-						num="{5}"
-						description="5 quemaduras solares en la infancia duplican el riesgo de sufrir cáncer de piel."
+						end="%"
+						num="{95}"
+						description="El 95% de la radiación UVA puede penetrar en las capas más profundas de la piel (como la dermis)."
 					/>
 					<Counter start="+" end="%" num="{15}" description="En los últimos cinco años: +15% de quemaduras solares" />
 				</div>
@@ -140,7 +145,7 @@
 					<p>
 						Los rayos UVB son los “culpables” de las quemaduras solares. Son más intensos durante los meses de verano y
 						en las horas pico de exposición solar. No penetran tan profundamente como los UVA, pero pueden dañar las
-						capas superficiales de la piel y contribuir al riesgo de desarrollar cáncer de piel.
+						capas superficiales de la piel.
 					</p>
 				</div>
 			</div>
@@ -207,8 +212,9 @@
 				</h2>
 				<p class="animate-fade-up animate-delay-200 mx-auto max-w-[40rem] text-center text-orange-600">
 					Ahora que sabemos un poco más sobre los diferentes tipos de radiación solar y los efectos en nuestra piel, es
-					momento de tener clara la solución. Os traemos cinco tips básicos de la mano los expertos de <strong
-						>Ecran®</strong
+					momento de tener clara la solución. Os traemos cinco tips básicos de la mano los expertos de
+					<a class="underline font-bold" target="_blank" rel="sponsored" href="https://somosecran.com/somos-ecran/">
+						Ecran®</a
 					>, marca líder en productos para la protección solar:
 				</p>
 			</div>
@@ -261,9 +267,10 @@
 		<div use:animate class="container relative flex flex-col justify-between lg:gap-24">
 			<h3 class="mx-auto max-w-xl text-center md:text-xl">
 				<span class="block animate-fade-up"
-					>La <span class="text-orange-600 underline">gama Sunnique de Ecran®</span> ofrece una amplia variedad de protectores
-					para que tu piel esté protegida y reforzada en todo momento. Además, refuerza las defensas y antioxidantes de la
-					piel y evita el envejecimiento prematuro. Un imprescindible en tu neceser</span
+					>La <a href="https://somosecran.com/sunnique/" target="_blank" class="text-orange-600 underline"
+						>gama Sunnique de Ecran®</a
+					> ofrece una amplia variedad de protectores para que tu piel esté protegida y reforzada en todo momento. Además,
+					refuerza las defensas y antioxidantes de la piel y evita el envejecimiento prematuro. Un imprescindible en tu neceser</span
 				>
 			</h3>
 			<div class="grid grid-cols-3 gap-4 xl:px-24">
@@ -285,9 +292,12 @@
 			<div class="grid lg:grid-cols-2 items-center gap-8 lg:gap-24">
 				<div class="animate-fade-right">
 					<p class="max-w-sm text-xl">
-						El <span class="text-orange-600 underline">post-solar ECRAN® Aftersun®</span> es el complemento perfecto para
-						aplicar después de haber estados expuestos al sol. Su fórmula con propiedades antiinflamatorias hidrata, repara
-						y refuerza las defensas de la piel
+						El <a
+							href="https://somosecran.com/productos/leche-hidratante-reparadora-familiar/"
+							target="_blank"
+							class="text-orange-600 underline">post-solar ECRAN® Aftersun®</a
+						> es el complemento perfecto para aplicar después de haber estados expuestos al sol. Su fórmula con propiedades
+						antiinflamatorias hidrata, repara y refuerza las defensas de la piel
 					</p>
 				</div>
 				<div class="animate-fade-left relative">
