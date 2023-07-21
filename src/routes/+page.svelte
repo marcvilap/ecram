@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths'
 	import video1 from '$assets/videos/video1.mp4'
 	import video2 from '$assets/videos/video2.mp4'
 	import video3 from '$assets/videos/video3.mp4'
@@ -30,7 +31,7 @@
 <main class="text-cyan-800 overflow-clip">
 	<div class="animate relative bg-stone-100">
 		<div use:animate class="container pb-16 pt-24 lg:pb-24">
-			<a class="mb-8 block w-28" href="/">
+			<a class="mb-8 block w-28" href="{base}">
 				<small class="mb-3 block text-xs leading-none text-stone-500">Vacaciones bajo el sol<br />Un proyecto de</small>
 				<Picture class="w-full" data="{logo}" />
 			</a>
@@ -76,7 +77,7 @@
 						must de la salud.
 					</p>
 					<a class="flex items-center gap-2 hover:underline" href="#down">
-						<Lottie class="w-6" path="/down.json" />
+						<Lottie class="w-6" path="{base}/down.json" />
 						<span>Saber más</span>
 					</a>
 				</div>

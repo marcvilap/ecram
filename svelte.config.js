@@ -10,6 +10,9 @@ const config = {
 			$assets: 'src/assets',
 			$components: 'src/components',
 		},
+		paths: {
+			base: '/app',
+		},
 	},
 }
 
